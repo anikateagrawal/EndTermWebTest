@@ -12,8 +12,8 @@
     </header>
     <main>
         <article>
-            <h1 class="head h">Book Title</h1>
-            <div class="bo b">
+            <h1 class="head h" id="bhead">Book Title</h1>
+            <div class="bo b" id="btext">
                 Select a Book on the right.
             </div>
         </article>
@@ -28,9 +28,9 @@
             <section class="search">
                 <h1 class="head">Select a book</h1>
                 <div class="bo books">
-                    <a href="./books/AliceInWonderland.txt">Alice In Wonderland</a>
-                    <a href="./books/JekyllAndHyde.txt">Jekyll And Hyde</a>
-                    <a href="./books/LOTR.txt">Lord Of The Rings</a>
+                    <a href="./books/AliceInWonderland.txt" id="alice">Alice In Wonderland</a>
+                    <a href="./books/JekyllAndHyde.txt" id="hyde">Jekyll And Hyde</a>
+                    <a href="./books/LOTR.txt" id="lord">Lord Of The Rings</a>
                 </div>
             </section>
             <section class="search">
@@ -54,6 +54,8 @@
             
         </aside>
     </main>
-    <script src="./script.js"></script>
+    <!-- <script src="./node_modules/" type="module"></script> -->
+    <!-- <script src="bundle.js"></script> -->
+    <script src="./script.js" type="module"></script>
 </body>
 </html>
