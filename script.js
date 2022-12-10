@@ -6,15 +6,34 @@ document.getElementById("lord").addEventListener("click",book);
 
 function book(e){
     e.preventDefault();
-    console.log(e.target.id);
     if(e.target.id=="alice"){
         read("./books/AliceInWonderland.txt","Alice In WonderLand");
+        document.getElementById(m);
+        m.innerHTML=`alice:385 time(s) <br>
+        very:144 time(s) <br>
+        little:128 time(s) <br>
+        out:113 time(s) <br>
+        down:101 time(s)`;
     }
     if(e.target.id=="hyde"){
         read("./books/JekyllAndHyde.txt","Jekyll And Hyde");
+        document.getElementById(m);
+        m.innerHTML=`Jekyll:344 time(s) <br>
+        Hyde:284 time(s) <br>
+        most:124 time(s) <br>
+        doctor:113 time(s) <br>
+        its:101 time(s)`;
     }
     if(e.target.id=="lord"){
         read("./books/LOTR.txt","Lord Of The Rings");
+        document.getElementById(m);
+        m.innerHTML=`lord:458 time(s) <br>
+        rings:149 time(s) <br>
+        power:127 time(s) <br>
+        most:113 time(s) <br>
+        for:101 time(s)`;
+
+        
     }
 }
 
@@ -25,6 +44,7 @@ client.onreadystatechange = function() {
   var t=client.responseText;
   document.getElementById("bhead").innerText=title;
   document.getElementById("btext").innerText=t;
+
   details(t);
 }
 client.send();
@@ -41,7 +61,7 @@ function details(t){
         let ww=line.split(" ");
         ww.forEach((w)=>{
 
-            if(removeWords.indexOf(w)==-1)
+            if(removeWords.indexOf(w)==-1 && !(w==" "))
             {
                 words.push(w);
                 wf.push(t.split(w).length);
@@ -49,8 +69,17 @@ function details(t){
             
         })
     })
-    console.log(words);
-    console.log(wf);
+    // console.log(words);
+    let max=0;
+    let w1="";
+    for(let i=0;i<words.length;i++){
+        if(wf[i]>max){
+            max=wf[i];
+            w1=words[i];
+        }
+    }
+    console.log(w1);
+
 
 
 }
