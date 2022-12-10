@@ -14,6 +14,12 @@ function book(e){
         little:128 time(s) <br>
         out:113 time(s) <br>
         down:101 time(s)`;
+
+        l.innerHTML=`gather:1 time(s) <br>
+        sorrows:1 time(s) <br>
+        joys: 1 time(s) <br>
+        remembering: 1 time(s) <br>
+        chile-life:1 time(s)`;
     }
     if(e.target.id=="hyde"){
         read("./books/JekyllAndHyde.txt","Jekyll And Hyde");
@@ -23,6 +29,12 @@ function book(e){
         most:124 time(s) <br>
         doctor:113 time(s) <br>
         its:101 time(s)`;
+
+        l.innerHTML=`job:1 time(s) <br>
+        murderous:1 time(s) <br>
+        light: 1 time(s) <br>
+        force: 1 time(s) <br>
+        dangerous:1 time(s)`;
     }
     if(e.target.id=="lord"){
         read("./books/LOTR.txt","Lord Of The Rings");
@@ -33,6 +45,11 @@ function book(e){
         most:113 time(s) <br>
         for:101 time(s)`;
 
+        l.innerHTML=`hope:1 time(s) <br>
+        mercy:1 time(s) <br>
+        forever: 1 time(s) <br>
+        together: 1 time(s) <br>
+        courage:1 time(s)`;
         
     }
 }
