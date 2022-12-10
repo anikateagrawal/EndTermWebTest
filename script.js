@@ -19,6 +19,7 @@ function book(e){
         read("./books/LOTR.txt","Lord Of The Rings");
     }
 }
+
 function read(url,title){
     var client = new XMLHttpRequest();
 client.open('GET', url);
