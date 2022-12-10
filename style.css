@@ -74,3 +74,10 @@ article{
     padding: 20px;
     
 }
+a{
+    text-decoration: none;
+}
+#game{
+    font-size: 40px;
+    text-decoration: underline;
+}

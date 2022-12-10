@@ -1,10 +1,8 @@
 
 
-(Array.from(document.getElementsByTagName("a"))).forEach((a)=>{
-    console.log("assd");
-    a.addEventListener("click",book);
-});
-
+document.getElementById("alice").addEventListener("click",book);
+document.getElementById("hyde").addEventListener("click",book);
+document.getElementById("lord").addEventListener("click",book);
 
 function book(e){
     e.preventDefault();
@@ -53,7 +51,7 @@ function details(t){
     })
     console.log(words);
     console.log(wf);
-    
+
 
 }
 
