@@ -17,3 +17,48 @@ header{
     background-image: url(./images/ban.png);
     border-radius: 20px;
 }
+main{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+article{
+    background-color: white;
+    width: 820px;
+    height: 800px;
+    overflow: auto;
+
+
+}
+aside{
+    width: 420px;
+    height: 1000px;
+}
+section{
+    background-color: white;
+    margin-bottom: 30px;
+}
+.head{
+    padding: 10px;
+    background-color: rgba(220, 220, 220, 0.623);
+}
+.bo{
+    padding: 20px;
+}
+input[type="text"]{
+    padding: 10px;
+    font-size: 20px;
+}
+button{
+    padding: 10px;
+    font-size: 20px;
+}
+.books{
+    height: 150px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
